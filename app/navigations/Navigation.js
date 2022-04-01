@@ -3,11 +3,6 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Icon } from 'react-native-elements'
 
-//import Hamacas from '../screens/Hamacas'
-//import Account from '../screens/Account'
-//import Comprar from '../screens/Comprar'
-//import Nuevo from '../screens/Nuevo'
-
 import HamacasStack from './HamacasStack'
 import AccountStack from './AccountStack'
 import ComprarStack from './ComprarStack'
@@ -34,10 +29,6 @@ export default function Navigation(){
                 component={HamacasStack}
                 options={{title:"Home"}}
                 />
-                <Tab.Screen name='Account' 
-                component={AccountStack}
-                options={{title:"Cuenta"}}
-                />
                 <Tab.Screen name='Comprar' 
                 component={ComprarStack}
                 options={{title:"Comprar"}}
@@ -54,7 +45,10 @@ export default function Navigation(){
                 component={SearchStack}
                 options={{title:"Buscar"}}
                 />
-
+                <Tab.Screen name='Account' 
+                component={AccountStack}
+                options={{title:"Cuenta"}}
+                />
             </Tab.Navigator>
         </NavigationContainer>
     )

@@ -1,6 +1,6 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
-import Hamacas from '../screens/Hamacas'
+import Favorites from '../screens/Favorites'
 
 const Stack = createStackNavigator()
 
@@ -9,7 +9,7 @@ export default function FavoritesStack(){
         <Stack.Navigator>
             <Stack.Screen
                 name='Favorites'
-                component={Hamacas}
+                component={Favorites}
                 options={{title:'Favoritos'}}
             />
         </Stack.Navigator>

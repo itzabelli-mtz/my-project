@@ -1,6 +1,8 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
-import Hamacas from '../screens/Hamacas'
+import Account from '../screens/Account/Account'
+import Login from '../screens/Account/Login'
+import Register from '../screens/Account/Register'
 
 const Stack = createStackNavigator()
 
@@ -9,8 +11,18 @@ export default function AccountStack(){
         <Stack.Navigator>
             <Stack.Screen
                 name='Account'
-                component={Hamacas}
+                component={Account}
                 options={{title:'Crear'}}
+            />
+            <Stack.Screen
+                name='login'
+                component={Login}
+                options={{title:'Iniciar Sesión'}}
+            />
+            <Stack.Screen
+                name='register'
+                component={Register}
+                options={{title:'Registro'}}
             />
         </Stack.Navigator>
     )
