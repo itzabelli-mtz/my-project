@@ -3,8 +3,8 @@ import { View, Text } from 'react-native'
 
 export default function Hamacas(){
     return(
-        <view>
-            <text>Hamacas</text>
-        </view>
+        <View>
+            <Text>Hamacas</Text>
+        </View>
     )
 }

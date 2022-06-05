@@ -3,8 +3,8 @@ import { View, Text } from 'react-native'
 
 export default function Search(){
     return(
-        <view>
-            <text>Search</text>
-        </view>
+        <View>
+            <Text>Search</Text>
+        </View>
     )
 }

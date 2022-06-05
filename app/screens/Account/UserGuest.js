@@ -9,7 +9,7 @@ export default function UserGuest(){
         <ScrollView style={StyleSheet.container}>
             <Image
                 style={styles.stretch}
-                source={require('../../../assets/imagen/my-project.jpg')}
+                source={require('../../../assets/imagen/Picsart_22-02-28_13-14-09-290.png')}
             />
             <Text style={styles.title}>Ingresa a tu perfil</Text>
             <Text style={styles.description}>

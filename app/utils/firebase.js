@@ -1,12 +1,12 @@
-import firebase from 'firebase'
+import firebase from 'firebase/app'
  
 const firebaseConfig = {
-    apiKey: "AIzaSyCHRMbk5CS6dgdnKG5Pd3TMlHnUmRG173A",
-    authDomain: "nuevo-mtz.firebaseapp.com",
-    projectId: "nuevo-mtz",
-    storageBucket: "nuevo-mtz.appspot.com",
-    messagingSenderId: "1033476844088",
-    appId: "1:1033476844088:web:86269e5a6e5c9beed954cd"
-  }
+  apiKey: "AIzaSyB9e_eMDD-r6Zs9JW3wT5gjqh_XMVOsfp4",
+  authDomain: "my-project-38116.firebaseapp.com",
+  projectId: "my-project-38116",
+  storageBucket: "my-project-38116.appspot.com",
+  messagingSenderId: "201112194856",
+  appId: "1:201112194856:web:2b7e2a08a84371105d8a1d"
+}
 
 export const firebaseapp = firebase.initializeApp(firebaseConfig)
