@@ -4,7 +4,7 @@ import { Input, Icon, Button } from 'react-native-elements'
 import { validateEmail } from '../../utils/validation'
 import firebase from 'firebase'
 import {useNavigation} from '@react-navigation/native'
-
+import Loading from '../Loading'
 
 export default function RegisterForm(props){
     const {toastRef} = props
@@ -112,7 +112,7 @@ export default function RegisterForm(props){
                 containerStyle={styles.btnContainerRegister}
                 buttonStyle={styles.btnRegister}
                 onPress={onSubmit}
-            />  
+            />
         </View>
     )
 }
