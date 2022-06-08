@@ -1,6 +1,6 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
-import Hamacas from '../screens/Hamacas'
+import Comprar from '../screens/Comprar'
 
 const Stack = createStackNavigator()
 
@@ -9,7 +9,7 @@ export default function ComprarStack(){
         <Stack.Navigator>
             <Stack.Screen
                 name='Comprar'
-                component={Hamacas}
+                component={Comprar}
                 options={{title:'Comprar'}}
             />
         </Stack.Navigator>

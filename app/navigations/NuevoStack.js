@@ -1,6 +1,6 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
-import Hamacas from '../screens/Hamacas'
+import Nuevo from '../screens/Nuevo'
 
 const Stack = createStackNavigator()
 
@@ -9,7 +9,7 @@ export default function NuevoStack(){
         <Stack.Navigator>
             <Stack.Screen
                 name='Nuevo'
-                component={Hamacas}
+                component={Nuevo}
                 options={{title:'Novedades'}}
             />
         </Stack.Navigator>

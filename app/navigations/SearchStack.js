@@ -1,6 +1,6 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
-import Hamacas from '../screens/Hamacas'
+import Search from '../screens/Search'
 
 const Stack = createStackNavigator()
 
@@ -9,7 +9,7 @@ export default function SearchStack(){
         <Stack.Navigator>
             <Stack.Screen
                 name='Search'
-                component={Hamacas}
+                component={Search}
                 options={{title:'Buscar'}}
             />
         </Stack.Navigator>
