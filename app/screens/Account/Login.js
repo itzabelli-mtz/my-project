@@ -11,7 +11,7 @@ export default function Login(){
     return(
         <KeyboardAwareScrollView>
             <Image
-                source={require('../../../assets/imagen/Picsart_22-02-28_13-14-09-290.png')}
+                source={require('../../../assets/imagen/Apoyo-App.png')}
                 resizeMode='contain'
                 style={styles.logo}
             />

@@ -29,10 +29,6 @@ export default function Navigation(){
                 component={HamacasStack}
                 options={{title:"Home"}}
                 />
-                <Tab.Screen name='Comprar' 
-                component={ComprarStack}
-                options={{title:"Comprar"}}
-                />
                 <Tab.Screen name='Nuevo' 
                 component={NuevoStack}
                 options={{title:"Novedades"}}

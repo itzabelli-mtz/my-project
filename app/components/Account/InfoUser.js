@@ -7,7 +7,7 @@ import * as ImagePicker from 'expo-image-picker'
 
 export default function InfoUser(props){
     const {userInfo, toastRef} = props
-    const {uid, photoURL, displayName, email, } = userInfo
+    const {uid, photoURL, displayName, displayEmail, displayPassword, email, } = userInfo
   
     const changeAvatar= async ()=>{
         const resultPermissions = await Permissions.askAsync(Permissions.CAMERA_ROLL)
@@ -87,7 +87,9 @@ return(
                 <Text style={styles.displayName}>
                     {displayName ? displayName : 'Invitado'}
                 </Text>
-                <Text>{email ? email : 'Entrada por SSO'} </Text>    
+                <Text style={styles.displayEmail}>
+                    {email ? email : 'Entrada por SSO'} 
+                </Text>    
             </View>
         </View>
     )
@@ -107,6 +109,10 @@ const styles = StyleSheet.create({
     },
     displayName:{
         fontWeight: 'bold',
+        paddingBottom: 5,
+        textAlign: 'center'
+    },
+    displayEmail: {
         paddingBottom: 5,
         textAlign: 'center'
     }

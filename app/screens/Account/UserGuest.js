@@ -9,11 +9,11 @@ export default function UserGuest(){
         <ScrollView style={StyleSheet.container}>
             <Image
                 style={styles.stretch}
-                source={require('../../../assets/imagen/Picsart_22-02-28_13-14-09-290.png')}
+                source={require('../../../assets/imagen/Apoyo-App.png')}
             />
             <Text style={styles.title}>Ingresa a tu perfil</Text>
             <Text style={styles.description}>
-                Elige y compra los mejores diseños de hamacas
+                ¿Quieres promocionar tu negocio?, ¡Registrate!
             </Text>
             <View style={styles.viewBtn}>
                 <Button
