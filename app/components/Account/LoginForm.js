@@ -4,7 +4,7 @@ import { Input, Icon, Button } from 'react-native-elements'
 import { validateEmail } from '../../utils/validation'
 import firebase from 'firebase'
 import {useNavigation} from '@react-navigation/native'
-import Loading from '../Loading'
+import Loading from '../../components/Loading'
 
 export default function LoginForm(props){
     const {toastRef} = props
